@@ -1,0 +1,205 @@
+@mixin flexCenter($value) {
+    display: flex;
+    flex-direction: $value;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin posCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin icon($value) {
+    font-size: 3.2rem;
+    color: $value;
+}
+
+@mixin textOverflow() {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@mixin fontFamily($value) {
+    @if $value ==Sans {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    @if $value ==Asap {
+        font-family: 'Asap', sans-serif;
+    }
+}
+
+
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==smphone {
+        @media screen and (max-width:400px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==phone {
+        @media screen and (max-width:600px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==tablet-small {
+        @media screen and (max-width:900px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==tablet-large {
+        @media screen and (max-width:1200px) {
+            @content;
+        }
+    }
+}
+@mixin button($color) {
+        border: 1px solid $color;
+        color: $color;
+        padding: 0.6rem 1.2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        @include flexCenter(row);
+        @include borderRadius(0.4rem);
+        @include transition(all 0.35s);
+       
+        gap: 1rem;
+        &:hover {
+            color: $white-color;
+            background: $color;
+        }
+
+    
+}
+
+
+
+@mixin transition($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+}
+
+@mixin widthCalc($value) {
+    width: calc(#{$value});
+    width: -webkit-calc(#{$value});
+    width: -moz-calc(#{$value});
+    width: -ms-calc(#{$value});
+    width: -o-calc(#{$value});
+}
+
+@mixin opacity($value) {
+    opacity: $value;
+    $opcity-fillter: $value * 100;
+    filter: alpha(opacity=$opcity-fillter);
+}
+
+@mixin borderRadius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+}
+
+@mixin boxShadow($value) {
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+    -o-box-shadow: $value;
+}
+
+@mixin heightCalc($value) {
+    height: calc(#{$value});
+    height: -webkit-calc(#{$value});
+    height: -moz-calc(#{$value});
+    height: -ms-calc(#{$value});
+    height: -o-calc(#{$value});
+}
+
+@mixin splitText($row, $maxHeight) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    max-height: $maxHeight;
+}
+
+@mixin transform($value) {
+    transform: $value;
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+}
+
+@mixin appearanceInput($value) {
+    appearance: $value;
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    -ms-appearance: $value;
+    -o-appearance: $value;
+}
+
+@mixin objectFit($value) {
+    object-fit: $value;
+    -webkit-object-fit: $value;
+    -moz-object-fit: $value;
+    -ms-object-fit: $value;
+    -o-object-fit: $value;
+}
+
+
+@mixin calc($type, $value) {
+    #{$type}: calc(#{$value});
+    #{$type}: -webkit-calc(#{$value});
+    #{$type}: -moz-calc(#{$value});
+    #{$type}: -ms-calc(#{$value});
+    #{$type}: -o-calc(#{$value});
+}
+
+
+
+@mixin order($value) {
+    -webkit-box-ordinal-group: $value + 1;
+    -ms-flex-order: $value;
+    ;
+    order: $value;
+}
+
+
+
+@mixin placeholderColor($color) {
+    &::placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+
+    &::-ms-input-placeholder {
+        color: $color;
+    }
+}

@@ -1,0 +1,88 @@
+.navbar {
+    @include fontFamily(Asap);
+    @include flexCenter(row);
+    @include responsive(tablet-large) {
+        display: none;
+    }
+
+    width: 100%;
+    height: 4rem;
+
+    background-color: $bg-red;
+    color: $white-color;
+    background-image: url("https://static.swappa.com/static/images/holidays/navbar_snowflakes_200x67.svg");
+    background-position: center;
+    background-size:18rem;
+    font-size: 1.6rem;
+
+    border-top: 0.1rem solid $white-color;
+
+    margin-top: 6.5rem;
+   
+
+    &__parents {
+        @include flexCenter(row);
+        width: 100%;
+        gap: 4.3rem;
+
+        .item-parent {
+            position: relative;
+            & > a {
+                @include flexCenter(row);
+                gap: 1rem;
+                font-weight: 500;
+
+               @include textOverflow;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+
+                width: 100%;
+                height: 1rem;
+
+                background-color: transparent;
+            }
+            &:hover .navbar__childrens {
+                display: block
+            }
+            .navbar__childrens {
+                @include borderRadius(0.3rem) ;
+
+                position: absolute;
+                top: 2.3rem;
+                background-color: $white-color;
+                color: $black-color;
+
+                padding: 0.6rem 0rem;
+                box-shadow: $shadow-color;
+
+                display: none;
+
+                .item-children {
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        background: $grey-color;
+                    }
+                    a {
+                        @include flexCenter(row);
+                        justify-content: unset;
+                        gap: 1rem;
+
+                        width: 100%;
+                        height: 100%;
+
+                        @include textOverflow;
+                      
+                        padding: 1.4rem 3rem;;
+                       
+                    }
+                }
+            }
+        }
+       
+
+    }
+}

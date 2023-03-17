@@ -1,0 +1,102 @@
+{
+	"data": {
+		"links": [
+			{
+				"href": "#/",
+				"text": "Iphone"
+			},
+			{
+				"href": "#/",
+				"text": "Phone"
+			},
+			{
+				"href": "#/",
+				"text": "Laptops"
+			},
+			{
+				"href": "#/",
+				"text": "Computers"
+			},
+			{
+				"href": "#/",
+				"text": "Watches"
+			}
+		],
+		"phoneProducts": [
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 11",
+				"price": "225",
+				"oldPrice": "699"
+			},
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 12",
+				"price": "225",
+				"oldPrice": "699"
+			},
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 13",
+				"price": "225",
+				"oldPrice": "699"
+			},
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 14",
+				"price": "225",
+				"oldPrice": "699"
+			},
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 15",
+				"price": "225",
+				"oldPrice": "699"
+			},
+			{
+				"img": "./images/card1.jpg",
+				"name": "iPhone 16",
+				"price": "225",
+				"oldPrice": "699"
+			}
+		],
+		"iPadsProducts": [
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			},
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			},
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			},
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			},
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			},
+			{
+				"img": "./images/ipad1.jpg",
+				"name": "Apple iPad Air 2",
+				"price": "113",
+				"oldPrice": "453"
+			}
+		]
+	}
+}

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="block" id="block"></div>
+  <header class="header">
+    <div class="header__content container">
+      <ul class="header__content--nav">
+        <li class="menu"><a><i class="fa-solid fa-bars"></i></a></li>
+        <li class="nav-mobile menu"><a><i class="fa-regular fa-circle-question"></i></a></li>
+        <li class="nav-mobile menu"><a><i class="fa-solid fa-circle-dollar-to-slot"></i></a></li>
+      </ul>
+      <div class="header__content--logo"><a href="#/"><img src="./images/logo.svg" alt="logo"></a></div>
+      <ul class="header__content--nav">
+        <li class="nav-mobile"><a href="#/"><i class="fa-regular fa-circle-user"></i></a></li>
+        <li class="nav-mobile menu"><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li class="menu"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar__parents">
+        <li class="item-parent"><a href="#/"><span>Iphones</span><i class="fa-solid fa-caret-down"></i></a>
+          <ul class="navbar__childrens">
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-lock-open"></i><span>Unlocked</span></a></li>
+            <li class="item-children"><a href="#/">Iphone Xr</a></li>
+            <li class="item-children"><a href="#/">Iphone 1</a></li>
+            <li class="item-children"><a href="#/">Iphone 11 Pro Max</a></li>
+            <li class="item-children"><a href="#/">Iphone 12</a></li>
+            <li class="item-children"><a href="#/">Iphone 13</a></li>
+            <li class="item-children"><a href="#/">Iphone SE 2nd Gen</a></li>
+            <li class="item-children"><a href="#/">Iphone 8</a></li>
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-circle-info"></i><span>Buyers Guide</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-arrow-right"></i><span>All Iphones</span></a></li>
+          </ul>
+        </li>
+        <li class="item-parent"><a href="#/"><span>Phones</span><i class="fa-solid fa-caret-down"></i></a>
+          <ul class="navbar__childrens">
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-lock-open"></i><span>Unlocked</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-apple"></i><span>Apple</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-android"></i><span>Samsung</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-google"></i><span>Google</span></a></li>
+            <li class="item-children"><a href="#/">Verizon</a></li>
+            <li class="item-children"><a href="#/">T-mobile</a></li>
+            <li class="item-children"><a href="#/">AT&amp;T</a></li>
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-arrow-right"></i><span>All Iphones</span></a></li>
+          </ul>
+        </li>
+        <li class="item-parent"><a href="#/"><span>Laptops</span><i class="fa-solid fa-caret-down"></i></a>
+          <ul class="navbar__childrens">
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-lock-open"></i><span>Unlocked</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-apple"></i><span>Apple</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-android"></i><span>Samsung</span></a></li>
+            <li class="item-children"><a href="#/"><i class="fa-brands fa-google"></i><span>Google</span></a></li>
+            <li class="item-children"><a href="#/">Verizon</a></li>
+            <li class="item-children"><a href="#/">T-mobile</a></li>
+            <li class="item-children"><a href="#/">AT&amp;T</a></li>
+            <li class="item-children"><a href="#/"><i class="fa-solid fa-arrow-right"></i><span>All Iphones</span></a></li>
+          </ul>
+        </li>
+        <li class="item-parent"><a href="#/"><span>Computers</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Watches</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Tables</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Video Games</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Home Tech</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Cameras</span><i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="item-parent"><a href="#/"><span>Sell</span><i class="fa-solid fa-caret-down"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <aside class="sidebar">
+    <header class="sidebar__header">
+      <div class="title"><img src="./images/logowhite.svg" alt="">
+        <h3>Save with Swappa</h3>
+      </div>
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </header>
+    <div class="sidebar__content">
+      <div class="buttons"><a class="active" href="#/">Login</a><a href="#/">Register</a></div>
+      <ul class="menu">
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-regular fa-circle-question"></i><span>Help</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Sell</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Trade-In</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Local</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Forums</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+      </ul>
+      <h3>Shop</h3>
+      <ul class="menu">
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-regular fa-circle-question"></i><span>Help</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Sell</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Trade-In</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
+            <div class="menu-right"><i class="fa-solid fa-ellipsis"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Local</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Forums</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+      </ul>
+    </div>
+  </aside>
+  <aside class="sidebar help">
+    <header class="sidebar__header">
+      <div class="title"><i class="fa-regular fa-circle-question"></i>
+        <h3>Get Help, Fast</h3>
+      </div>
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </header>
+    <div class="sidebar__content">
+      <h3>Email</h3><a class="content-button content-button--email" href="#/"><i class="fa-regular fa-envelope"></i>                help@swappa.com</a>
+      <h3>Need help with a listing or a sale?</h3><a class="content-button content-button--submit" href="#/"><i class="fa-regular fa-circle-question"></i>                Submit Help Request</a>
+      <h3>Helpful Links</h3>
+      <ul class="helpful">
+        <li><a href="#/">How to Sell</a></li>
+        <li><a href="#/">FAQ Pages</a></li>
+        <li><a href="#/">Other Contact</a></li>
+      </ul>
+      <div class="sub-help">
+        <p>Swappa&apos;s typical response time for help requests is around 20 minutes... <br><span>That&apos;s really fast</span></p>
+      </div>
+    </div>
+  </aside>
+  <aside class="sidebar sell">
+    <header class="sidebar__header">
+      <div class="title"><i class="fa-solid fa-circle-dollar-to-slot"></i>
+        <h3>Sell with Swappa</h3>
+      </div>
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </header>
+    <div class="sidebar__content">
+      <h3>Make More Green</h3><a class="content-button" href="#/">Start Selling<i class="fa-solid fa-arrow-right"></i></a>
+      <h3>Seller Help</h3>
+      <ul class="helpful">
+        <li><a href="#/">How to Sell</a></li>
+        <li><a href="#/">Fair Fees</a></li>
+        <li><a href="#/">Seller FAQ</a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-regular fa-circle-question"></i><span>Help</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Sell</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Trade-In</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Local</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Forums</span></div>
+            <div class="menu-right"><i class="fa-solid fa-arrow-right"></i></div></a></li>
+      </ul>
+    </div>
+  </aside>
+  <aside class="sidebar cart">
+    <header class="sidebar__header">
+      <div class="title"><i class="fa-solid fa-cart-shopping"></i>
+        <h3>Cart, Full of Deals</h3>
+      </div>
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </header>
+    <div class="sidebar__content">
+      <div class="sub-help">
+        <p>Your cart is empty :</p>
+      </div>
+    </div>
+    <footer class="sidebar__footer">
+      <div class="total">
+        <h3>Total: $0</h3>
+      </div>
+      <div class="find"><a href="#/">Find a good deal</a></div>
+    </footer>
+  </aside>
+  <aside class="sidebar search">
+    <header class="sidebar__header">
+      <div class="title"><i class="fa-solid fa-magnifying-glass"></i>
+        <h3>Search and Save</h3>
+      </div>
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </header>
+    <div class="sidebar__content">
+      <form action="" method="get">
+        <div class="buttons">
+          <input type="text" placeholder="Find a good deal">
+          <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </form>
+      <h3>Trending Searches</h3>
+      <ul class="menu">
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><span>PlayStation 5</span></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><span>Iphone 12</span></div></a></li>
+        <li class="menu__item"><a href="#/">
+            <div class="menu-left"><span>Iphone 11</span></div></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main container">
+    <section class="main__top">
+      <h1>Welcome to the safest marketplace for newish tech</h1>
+      <div class="main-list">
+        <div class="row gx-10 gy-5 ab">
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="card-item">
+              <div class="card">
+                <div class="card__header">
+                  <h3>No Junk, No Jerks</h3>
+                </div><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>IPhones</h4>
+                  <div class="use">
+                    <div class="use__left"><i class="fa-solid fa-list-check"></i><span> 6520 approved listings </span></div>
+                    <div class="use__right"><i class="fa-solid fa-users"></i><span>755 legit sellers</span></div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="card-item">
+              <div class="card">
+                <div class="card__header">
+                  <h3>Free Shipping</h3>
+                </div><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card2.jpg" alt=""></div>
+                  <h4>Phones</h4>
+                  <div class="use">
+                    <div class="use__left"><i class="fa-solid fa-list-check"></i><span> 6520 approved listings </span></div>
+                    <div class="use__right"><i class="fa-solid fa-users"></i><span>755 legit sellers</span></div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="card-item">
+              <div class="card">
+                <div class="card__header">
+                  <h3>24/7/365 Support</h3>
+                </div><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card3.jpg" alt=""></div>
+                  <h4>MacBooks + Laptops</h4>
+                  <div class="use">
+                    <div class="use__left"><i class="fa-solid fa-list-check"></i><span> 6520 approved listings </span></div>
+                    <div class="use__right"><i class="fa-solid fa-users"></i><span>755 legit sellers</span></div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1> Shop Phones by Carrier</h1>
+      <div class="main__carrier">
+        <div class="row gx-5 gy-4 carrier-list ab">
+          <div class="col-xl-2 col-sm-2 col-6">
+            <div class="carrier-item"><a href="#/"><img src="./images/unlocked_btn.svg" alt="unlocked" srcset=""></a></div>
+          </div>
+          <div class="col-xl-2 col-sm-2 col-6">
+            <div class="carrier-item"><a href="#/"><img src="./images/att_btn.svg" alt="att" srcset=""></a></div>
+          </div>
+          <div class="col-xl-2 col-sm-2 col-6">
+            <div class="carrier-item"><a href="#/"><img src="./images/tmobile_btn.svg" alt="tmobile_btn" srcset=""></a></div>
+          </div>
+          <div class="col-xl-2 col-sm-2 col-6">
+            <div class="carrier-item"><a href="#/"><img src="./images/verizon_btn.svg" alt="verizon_btn" srcset=""></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__billboard">
+      <header class="search-block">
+        <div class="search-block__title"><i class="fa-solid fa-circle-dollar-to-slot"></i>
+          <h3>Get more green, get paid fast</h3>
+        </div>
+        <div class="search-block__btn"><a href="#/"><span>Sell with Swappa</span><i class="fa-solid fa-arrow-right"></i></a></div>
+      </header>
+      <div class="billboard-list list-card">
+        <div class="row gy-4 ab">
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/computer.jpg" alt=""></div>
+                  <h4>Computers</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/watches.jpg" alt=""></div>
+                  <h4>Watches</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/tablet.jpg" alt=""></div>
+                  <h4>Ipads + Tablets</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/videogame.jpg" alt=""></div>
+                  <h4>Video Games</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/hometech.jpg" alt=""></div>
+                  <h4>Home Tech</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/camera.jpg" alt=""></div>
+                  <h4>Cameras + Lenses</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/audio.jpg" alt=""></div>
+                  <h4>AirPods + Audio</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/drones.jpg" alt=""></div>
+                  <h4>Drones</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="billboard-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/cyling.jpg" alt=""></div>
+                  <h4>Fitness + Cycling</h4></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__trade">
+      <header class="search-block"><a class="search-block__image" href="#/"><img src="./images/logosell.jpg" alt=""></a>
+        <div class="search-block__title">
+          <h3>Sell fast with less work</h3>
+        </div>
+        <div class="search-block__btn"><a href="#/"><span>Sell with Trade-In</span><i class="fa-solid fa-arrow-right"></i></a></div>
+      </header>
+      <div class="trade-list list-card">
+        <h3><span>Featured Brands</span></h3>
+        <div class="row gy-4 ab">
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/amazon.jpg" alt=""></div>
+                  <h4>Amazon</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/apple.jpg" alt=""></div>
+                  <h4>Apple</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/google.jpg" alt=""></div>
+                  <h4>Google</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/microsoft.jpg" alt=""></div>
+                  <h4>Microsoft</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/nitendo.jpg" alt=""></div>
+                  <h4>Nintendo</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/nvidia.jpg" alt=""></div>
+                  <h4>Nvidia</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/oneplus.jpg" alt=""></div>
+                  <h4>One Plus</h4></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="trade-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/samsung.jpg" alt=""></div>
+                  <h4>Samsung</h4></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__local">
+      <header class="search-block"><a class="search-block__image" href="#/"><img src="./images/logolocal.jpg" alt=""></a>
+        <div class="search-block__title">
+          <h3>Next-day delivery in 48 metros</h3>
+        </div>
+        <div class="search-block__btn"><a class="local" href="#/"><span>Swappa Local</span><i class="fa-solid fa-arrow-right"></i></a></div>
+      </header>
+      <div class="local-list list-card">
+        <h3><i class="fa-solid fa-mobile-screen-button"></i><span>iPhones and Phones       </span></h3>
+        <div class="row gy-4 ab">
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 11</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 12</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 13</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 14</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 15</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/card1.jpg" alt=""></div>
+                  <h4>iPhone 16</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>225</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <li><a href="#/"><i class="fa-solid fa-dollar-sign"></i><span>Sell Phone</span></a></li>
+          <li><a href="#/"><span>Shop Phone</span><i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="local-list list-card">
+        <h3><i class="fa-solid fa-tablet-screen-button"></i><span>iPads and Tablets</span></h3>
+        <div class="row gy-4 ab">
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="local-list__item">
+              <div class="card"><a class="card__main" href="#/">
+                  <div class="image"><img src="./images/ipad1.jpg" alt=""></div>
+                  <h4>Apple iPad Air 2</h4>
+                  <div class="reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="price">
+                    <div class="price__left"><i class="fa-solid fa-dollar-sign"></i><span>113</span>
+                      <del>$699</del>
+                    </div>
+                    <div class="price__right"><i class="fa-brands fa-apple"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <li><a href="#/"><i class="fa-solid fa-dollar-sign"></i><span>Sell Phone</span></a></li>
+          <li><a href="#/"><span>Shop Phone</span><i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="main_more">
+      <h2>Why Swappa?</h2>
+      <div class="more__nav">
+        <div class="row gx-5 gy-5 ab">
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon"><i class="fa-regular fa-handshake"></i></div>
+              <h3>People Powered</h3>
+              <p>
+                On Swappa, you buy and sell directly with other irectly with other users. No middleman
+                means you get the best price and most value.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon more-item__icon--red"><i class="fa-solid fa-ban"></i></div>
+              <h3>People Powered</h3>
+              <p>On Swappa, you buy and se means you get the best price and most value.</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon"><i class="fa-solid fa-list-check"></i></div>
+              <h3>People Powered</h3>
+              <p>On Swappa, ys you get the best price and most value.</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon"><i class="fa-solid fa-hand-back-fist"></i></div>
+              <h3>People Powered</h3>
+              <p>
+                On Swappa, you buy and sell directly with other users. No middleman means you get the
+                best price and most value.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon more-item__icon--green"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3>People Powered</h3>
+              <p>
+                On Swappa, you buy and sell directly with other users. No middleman means you get the
+                best price and most value.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12">
+            <div class="more-item">
+              <div class="more-item__icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <h3>People Powered</h3>
+              <p>
+                On Swappa, you buy and sell directly with other users. No middleman means you get the
+                best price and most value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Recognized for value and safety</h2>
+      <div class="more__brands">
+        <div class="row gx-3 gy-3 ab">
+          <div class="col-xl-15 col-sm-4 col-4">
+            <div class="brand-item"><a href="#/"><img src="./images/press_wsj.jpg" alt=""></a></div>
+          </div>
+          <div class="col-xl-15 col-sm-4 col-4">
+            <div class="brand-item"><a href="#/"><img src="./images/press_theverge.jpg" alt=""></a></div>
+          </div>
+          <div class="col-xl-15 col-sm-4 col-4">
+            <div class="brand-item"><a href="#/"><img src="./images/press_tomsguide.jpg" alt=""></a></div>
+          </div>
+          <div class="col-xl-15 col-sm-4 col-4">
+            <div class="brand-item"><a href="#/"><img src="./images/press_lifehacker.jpg" alt=""></a></div>
+          </div>
+          <div class="col-xl-15 col-sm-4 col-4">
+            <div class="brand-item"><a href="#/"><img src="./images/press_cnet.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="more__slide">
+        <div class="row gx-2 ab">
+          <div class="col-xl-3 col-sm-3 col-12">
+            <div class="slide--left">
+              <h2>Excellent</h2>
+              <div class="slide--left__star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <div class="slide--left__reviews">
+                <p>Base on <a href="#/">22,099 reviews</a></p>
+              </div>
+              <div class="slide--left__truspilot"><i class="fa-solid fa-star"></i><a href="#/">Trustpilots</a></div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-sm-9 slide-mobile">
+            <div class="slide--right">
+              <div class="swiper mySwiper slider-container">
+                <div class="fa-solid fa-chevron-left pre-btn control-btn"></div>
+                <div class="fa-solid fa-chevron-right nxt-btn control-btn"></div>
+                <div class="swiper-wrapper slide-list">
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                  <div class="swiper-slide slider-container__item">
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="heading"><a href="#/">Lorem ipsum dole.</a></div>
+                    <p>
+                      Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                      ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                    </p>
+                    <div class="name"><a href="#/"><span>Le van A</span><small>3 hours ago</small></a></div><span>Show our 4 &amp; 5 star reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="trailer">
+    <div class="container">
+      <p>
+        Disclosure: This site contains affiliate links to other sites. We may receive commissions for purchases
+        made through these links.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="row gx-3 gy-5 ab">
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">Buy</a></li>
+                <li><a href="#/">Buyer Guides</a></li>
+                <li><a href="#/">Buy Phones</a></li>
+                <li><a href="#/">Buy Tablets</a></li>
+                <li><a href="#/">Buy MacBooks</a></li>
+                <li><a href="#/">Buy Laptops</a></li>
+                <li><a href="#/">Buy iPhones</a></li>
+                <li><a href="#/">Buy Apple</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">Unlocked Phones</a></li>
+                <li><a href="#/">Video Games</a></li>
+                <li><a href="#/"> Smartwatches</a></li>
+                <li><a href="#/"> Cameras + Lenses</a></li>
+                <li><a href="#/">Home Tech</a></li>
+                <li><a href="#/">AirPods + Audio</a></li>
+                <li><a href="#/">Drones + DJI</a></li>
+                <li><a href="#/">Fitness + Cycling</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">Sell</a></li>
+                <li><a href="#/">Trade-In</a></li>
+                <li><a href="#/">Sell iPhones</a></li>
+                <li><a href="#/">Sell Phone</a></li>
+                <li><a href="#/">Sell Tablet</a></li>
+                <li><a href="#/">Sell Watch</a></li>
+                <li><a href="#/">Sell Laptop</a></li>
+                <li><a href="#/">Sell Apple</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">IMEI Check</a></li>
+                <li><a href="#/">Swappa Local</a></li>
+                <li><a href="#/">Download App</a></li>
+                <li><a href="#/">Carriers</a></li>
+                <li><a href="#/">Phone Repair</a></li>
+                <li><a href="#/">Swappa vs. eBay</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">Help</a></li>
+                <li><a href="#/">FAQs</a></li>
+                <li><a href="#/">Search</a></li>
+                <li><a href="#/">ADA Accessibility</a></li>
+                <li><a href="#/">Sustainability</a></li>
+                <li><a href="#/">Prices</a></li>
+                <li><a href="#/">Fees</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-sm-4">
+            <div class="top-item">
+              <ul>
+                <li><a href="#/">About Swappa</a></li>
+                <li><a href="#/">Blog</a></li>
+                <li><a href="#/">Forums</a></li>
+                <li><a href="#/">Contact Us</a></li>
+                <li><a href="#/">Press</a></li>
+                <li><a href="#/">Policies</a></li>
+                <li><a href="#/">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row gx-3 gy-3 ab">
+          <div class="col-xl-4 col-sm-4 col-12">
+            <div class="connect">
+              <ul>
+                <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-reddit"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-4 col-12">
+            <div class="logo"><a href="#/"><img src="./images/footer.svg" alt="" srcset=""></a></div>
+          </div>
+          <div class="col-xl-4 col-sm-4 col-12">
+            <div class="right"><span>Copyright &copy; 2010-2022 Swappa, LLC</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>

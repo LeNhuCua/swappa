@@ -1,0 +1,29 @@
+mixin card(image, name)
+    .card
+        a.card__main(href='#/')
+            .image
+                img(src= image alt= image)
+            h4= name
+            .reviews
+                i.fa-solid.fa-star
+                i.fa-solid.fa-star
+                i.fa-solid.fa-star
+                i.fa-solid.fa-star
+                i.fa-solid.fa-star
+            .price
+                .price__left
+                    i.fa-solid.fa-dollar-sign
+                    span 113
+                    del $699
+                .price__right
+                    i.fa-brands.fa-apple
+
+
+
+//- mixin nava(link)
+//-     ul.navbar__parents
+//-         each link in links
+//-             li.item-parent
+//-                 a(href='#/')
+//-                     span= link.text
+//-                     i.fa-solid.fa-caret-down

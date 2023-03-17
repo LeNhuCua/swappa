@@ -1,0 +1,19 @@
+#trailer {
+    @include fontFamily(Sans);
+   
+   
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8rem;
+
+    color: $grey4-color;
+
+    margin-bottom: 2rem;
+    & > div {
+        border-top: 1px solid $grey4-color;
+        @include flexCenter(row);
+        p {
+            line-height: 2.4rem;
+        }
+    }
+}

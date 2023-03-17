@@ -1,0 +1,65 @@
+.header {
+    @include fontFamily(Asap);
+    @include flexCenter(row);
+
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.5rem;
+
+    background: $primary-color;
+    background-image: url("https://static.swappa.com/static/images/holidays/navbar_snowflakes_200x67.svg");
+    background-position: center;
+    background-size:18rem;
+    color: $white-color;
+
+    &__content {
+        @include flexCenter(row);
+        justify-content: space-between;
+
+        @include responsive(tablet-large) {
+            padding: 0 1.5rem
+        }
+        &--nav {
+            @include flexCenter(row);
+            gap: 4rem;
+
+            li {
+                cursor: pointer;
+
+                i {
+                    @include icon($white-color)
+                }
+
+                &:hover i {
+                    color: $yellow-color;
+                }
+                &.nav-mobile {
+                    @include responsive(tablet-large) {
+                        display: none
+                    }
+                }
+            }
+
+        }
+
+        &--logo {
+            a {
+                display: block;
+               
+                height: 100%;
+                img {
+                   
+                    height:3.5rem;
+
+                }
+            }
+
+        }
+    }
+
+
+
+}

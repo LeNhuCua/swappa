@@ -1,0 +1,512 @@
+extends ../layout/layout.pug
+
+block vars
+    -title= 'Trang chủ'
+    -links = data.phoneProducts;
+    -links2 = data.iPadsProducts;
+block main
+    section.main__top
+        h1 Welcome to the safest marketplace for newish tech
+        .main-list
+            .row.gx-10.gy-5.ab
+                .col-xl-4.col-sm-6.col-12
+                    .card-item
+                        .card
+                            .card__header
+                                h3 No Junk, No Jerks
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/card1.jpg' alt='')
+                                h4 IPhones
+                                .use
+                                    .use__left
+                                        i.fa-solid.fa-list-check
+                                        span  6520 approved listings 
+                                    .use__right
+                                        i.fa-solid.fa-users
+                                        span
+                                            | 755 legit sellers
+                .col-xl-4.col-sm-6.col-12
+                    .card-item
+                        .card
+                            .card__header
+                                h3 Free Shipping
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/card2.jpg' alt='')
+                                h4 Phones
+                                .use
+                                    .use__left
+                                        i.fa-solid.fa-list-check
+                                        span  6520 approved listings 
+                                    .use__right
+                                        i.fa-solid.fa-users
+                                        span
+                                            | 755 legit sellers
+                .col-xl-4.col-sm-6.col-12
+                    .card-item
+                        .card
+                            .card__header
+                                h3 24/7/365 Support
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/card3.jpg' alt='')
+                                h4 MacBooks + Laptops
+                                .use
+                                    .use__left
+                                        i.fa-solid.fa-list-check
+                                        span  6520 approved listings 
+                                    .use__right
+                                        i.fa-solid.fa-users
+                                        span
+                                            | 755 legit sellers
+        h1  Shop Phones by Carrier
+        .main__carrier
+            .row.gx-5.gy-4.carrier-list.ab
+                .col-xl-2.col-sm-2.col-6
+                    .carrier-item
+                        a(href='#/')
+                            img(src='./images/unlocked_btn.svg' alt='unlocked' srcset='')
+                .col-xl-2.col-sm-2.col-6
+                    .carrier-item
+                        a(href='#/')
+                            img(src='./images/att_btn.svg' alt='att' srcset='')
+                .col-xl-2.col-sm-2.col-6
+                    .carrier-item
+                        a(href='#/')
+                            img(src='./images/tmobile_btn.svg' alt='tmobile_btn' srcset='')
+                .col-xl-2.col-sm-2.col-6
+                    .carrier-item
+                        a(href='#/')
+                            img(src='./images/verizon_btn.svg' alt='verizon_btn' srcset='')
+
+    section.main__billboard
+        header.search-block
+            .search-block__title
+                i.fa-solid.fa-circle-dollar-to-slot
+                h3 Get more green, get paid fast
+            .search-block__btn
+                a(href='#/')
+                    span Sell with Swappa
+                    i.fa-solid.fa-arrow-right
+        .billboard-list.list-card
+            .row.gy-4.ab
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/computer.jpg' alt='')
+                                h4 Computers
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/watches.jpg' alt='')
+                                h4 Watches
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/tablet.jpg' alt='')
+                                h4 Ipads + Tablets
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/videogame.jpg' alt='')
+                                h4 Video Games
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/hometech.jpg' alt='')
+                                h4 Home Tech
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/camera.jpg' alt='')
+                                h4 Cameras + Lenses
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/audio.jpg' alt='')
+                                h4 AirPods + Audio
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/drones.jpg' alt='')
+                                h4 Drones
+                .col-xl-2.col-6.col-sm-4
+                    .billboard-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/cyling.jpg' alt='')
+                                h4 Fitness + Cycling
+
+    section.main__trade
+        header.search-block
+            a.search-block__image(href='#/')
+                img(src='./images/logosell.jpg' alt='')
+            .search-block__title
+                h3 Sell fast with less work
+            .search-block__btn
+                a(href='#/')
+                    span Sell with Trade-In
+                    i.fa-solid.fa-arrow-right
+        .trade-list.list-card
+            h3
+                span Featured Brands
+            .row.gy-4.ab
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/amazon.jpg' alt='')
+                                h4 Amazon
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/apple.jpg' alt='')
+                                h4 Apple
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/google.jpg' alt='')
+                                h4 Google
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/microsoft.jpg' alt='')
+                                h4 Microsoft
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/nitendo.jpg' alt='')
+                                h4 Nintendo
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/nvidia.jpg' alt='')
+                                h4 Nvidia
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/oneplus.jpg' alt='')
+                                h4 One Plus
+                .col-xl-2.col-6.col-sm-4
+                    .trade-list__item
+                        .card
+                            a.card__main(href='#/')
+                                .image
+                                    img(src='./images/samsung.jpg' alt='')
+                                h4 Samsung
+
+    section.main__local
+        header.search-block
+            a.search-block__image(href='#/')
+                img(src='./images/logolocal.jpg' alt='')
+            .search-block__title
+                h3 Next-day delivery in 48 metros
+            .search-block__btn
+                a.local(href='#/')
+                    span Swappa Local
+                    i.fa-solid.fa-arrow-right
+        .local-list.list-card
+            h3
+                i.fa-solid.fa-mobile-screen-button
+                span iPhones and Phones       
+            .row.gy-4.ab
+                each link in links  
+                    .col-xl-2.col-6.col-sm-4
+                        .local-list__item
+                            .card
+                                a.card__main(href='#/')
+                                    .image
+                                        img(src=link.img alt='')
+                                    h4= link.name
+                                    .reviews
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                    .price
+                                        .price__left
+                                            i.fa-solid.fa-dollar-sign
+                                            span=link.price
+                                            del $699
+                                        .price__right
+                                            i.fa-brands.fa-apple
+            ul.nav
+                li
+                    a(href='#/')
+                        i.fa-solid.fa-dollar-sign
+                        span Sell Phone
+                li
+                    a(href='#/')
+                        span Shop Phone
+                        i.fa-solid.fa-arrow-right
+        .local-list.list-card
+            h3
+                i.fa-solid.fa-tablet-screen-button
+                span iPads and Tablets
+            .row.gy-4.ab
+                each link in links2  
+                    .col-xl-2.col-6.col-sm-4
+                        .local-list__item
+                            .card
+                                a.card__main(href='#/')
+                                    .image
+                                        img(src=link.img alt='')
+                                    h4= link.name
+                                    .reviews
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                    .price
+                                        .price__left
+                                            i.fa-solid.fa-dollar-sign
+                                            span=link.price
+                                            del $699
+                                        .price__right
+                                            i.fa-brands.fa-apple
+            ul.nav
+                li
+                    a(href='#/')
+                        i.fa-solid.fa-dollar-sign
+                        span Sell Phone
+                li
+                    a(href='#/')
+                        span Shop Phone
+                        i.fa-solid.fa-arrow-right
+
+    section.main_more
+        h2 Why Swappa?
+        .more__nav
+            .row.gx-5.gy-5.ab
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon
+                            i.fa-regular.fa-handshake
+                        h3 People Powered
+                        p
+                            | On Swappa, you buy and sell directly with other irectly with other users. No middleman
+                            | means you get the best price and most value.
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon.more-item__icon--red
+                            i.fa-solid.fa-ban
+                        h3 People Powered
+                        p On Swappa, you buy and se means you get the best price and most value.
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon
+                            i.fa-solid.fa-list-check
+                        h3 People Powered
+                        p On Swappa, ys you get the best price and most value.
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon
+                            i.fa-solid.fa-hand-back-fist
+                        h3 People Powered
+                        p
+                            | On Swappa, you buy and sell directly with other users. No middleman means you get the
+                            | best price and most value.
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon.more-item__icon--green
+                            i.fa-solid.fa-hand-holding-dollar
+                        h3 People Powered
+                        p
+                            | On Swappa, you buy and sell directly with other users. No middleman means you get the
+                            | best price and most value.
+                .col-xl-4.col-sm-6.col-12
+                    .more-item
+                        .more-item__icon
+                            i.fa-solid.fa-envelope-open-text
+                        h3 People Powered
+                        p
+                            | On Swappa, you buy and sell directly with other users. No middleman means you get the
+                            | best price and most value.
+        h2 Recognized for value and safety
+        .more__brands
+            .row.gx-3.gy-3.ab
+                .col-xl-15.col-sm-4.col-4
+                    .brand-item
+                        a(href='#/')
+                            img(src='./images/press_wsj.jpg' alt='')
+                .col-xl-15.col-sm-4.col-4
+                    .brand-item
+                        a(href='#/')
+                            img(src='./images/press_theverge.jpg' alt='')
+                .col-xl-15.col-sm-4.col-4
+                    .brand-item
+                        a(href='#/')
+                            img(src='./images/press_tomsguide.jpg' alt='')
+                .col-xl-15.col-sm-4.col-4
+                    .brand-item
+                        a(href='#/')
+                            img(src='./images/press_lifehacker.jpg' alt='')
+                .col-xl-15.col-sm-4.col-4
+                    .brand-item
+                        a(href='#/')
+                            img(src='./images/press_cnet.jpg' alt='')
+        .more__slide
+            .row.gx-2.ab
+                .col-xl-3.col-sm-3.col-12
+                    .slide--left
+                        h2 Excellent
+                        .slide--left__star
+                            i.fa-regular.fa-star
+                            i.fa-regular.fa-star
+                            i.fa-regular.fa-star
+                            i.fa-regular.fa-star
+                            i.fa-regular.fa-star
+                        .slide--left__reviews
+                            p
+                                | Base on 
+                                a(href='#/') 22,099 reviews
+                        .slide--left__truspilot
+                            i.fa-solid.fa-star
+                            a(href='#/') Trustpilots
+                .col-xl-9.col-sm-9.slide-mobile
+                    .slide--right
+                        .swiper.mySwiper.slider-container
+                            .fa-solid.fa-chevron-left.pre-btn.control-btn
+                            .fa-solid.fa-chevron-right.nxt-btn.control-btn
+                            .swiper-wrapper.slide-list
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews
+                                .swiper-slide.slider-container__item
+                                    .star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                        i.fa-regular.fa-star
+                                    .heading
+                                        a(href='#/') Lorem ipsum dole.
+                                    p
+                                        | Lorem luptatibus exercitationem quas saepe maxime nobis vel, esse expedita
+                                        | ipsum enim tempora. Neque a quam est iste numquam officia enim nulla!
+                                    .name
+                                        a(href='#/')
+                                            span Le van A
+                                            small 3 hours ago
+                                    span
+                                        | Show our 4 &amp; 5 star reviews

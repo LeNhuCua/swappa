@@ -1,0 +1,25 @@
+.more-item {
+    @include flexCenter(column);
+    padding: 1rem;
+    gap: 2rem;
+    text-align: center;
+    line-height: 2.4rem;
+    &__icon{
+        @include icon($blue-color); 
+        &--red {
+            color: $bg-red;
+        }
+        &--green {
+            color: $green-color;
+        }
+    }
+    h3 {
+        font-size: 2.4rem;
+        font-weight: 600;  
+    }
+    p {
+       
+        @include fontFamily(Sans);
+        font-size: 1.6rem;
+    }
+}

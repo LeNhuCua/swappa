@@ -1,0 +1,74 @@
+.footer {
+    @include fontFamily(Asap);
+    border-top: 3px solid $orange-color;
+    background-image: url("https://static.swappa.com/static/images/holidays/navbar_snowflakes_200x67.svg");
+    background-position: center;
+    background-size: 80rem;
+    background-color: $primary-color;
+    padding: 2rem 0rem;
+
+    &__top {
+        width: 100%;
+        padding: 0 2rem;
+
+        .top-item {
+            ul {
+
+                @include flexCenter(column);
+                align-items: flex-start;
+                gap: 1rem;
+                font-size: 1.7rem;
+                color: $white-color;
+                li {
+                    &:hover {
+                        color: $yellow-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        &>div {
+            @include flexCenter(row);
+
+            text-align: center;
+        }
+
+
+        color: $white-color;
+        margin-top: 2.5rem;
+        line-height: 2.4rem;
+
+        .connect {
+            ul {
+                @include flexCenter(row);
+                gap: 1rem;
+
+                li {
+                    i {
+                        font-size: 3.5rem;
+                    }
+                  
+                        &:hover {
+                            color: $yellow-color;
+                        }
+                    
+                }
+            }
+
+        }
+
+        .logo {
+
+            img {
+                height: 4rem;
+            }
+        }
+
+        .right {
+            font-size: 1.7rem;
+        }
+    }
+
+}
